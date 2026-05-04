@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carsports</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="bg-dark">
+            <ul class="d-flex justify-content-center gap-4 list-unstyled py-3 m-0">
+                <li><a class="text-white text-decoration-none" href="#sobre">Sobre</a></li>
+                <li><a class="text-white text-decoration-none" href="#chuteiras">Chuteiras</a></li>
+                <li><a class="text-white text-decoration-none" href="#galeria">Galeria</a></li>
+                <li><a class="text-white text-decoration-none" href="#video">Vídeo</a></li>
+                <li><a class="text-white text-decoration-none" href="#lista">Lista</a></li>
+                <li><a class="text-white text-decoration-none" href="#tabela">Tabela</a></li>
+                <li><a class="text-white text-decoration-none" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="sobre" class="container py-5 text-center">
+            <h1 class="mb-3">Carsports</h1>
+            <p class="mb-4">
+                Bem-vindo ao Carsports, um site criado para apresentar chuteiras e equipamentos
+                esportivos com estilo, desempenho e qualidade. Este projeto foi desenvolvido
+                utilizando HTML e CSS, com o objetivo de demonstrar uma página web estática
+                organizada, visualmente agradável e funcional.
+            </p>
+            <img src="img/destaque.jpg" class="img-fluid rounded" alt="Chuteira em destaque">
+        </section>
+
+        <section id="chuteiras" class="container py-5 text-center">
+            <h2>Chuteiras</h2>
+            <p>
+                Confira modelos de chuteiras desenvolvidos para oferecer conforto,
+                velocidade e controle dentro de campo.
+            </p>
+        </section>
+
+        <section id="galeria" class="container py-5">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <img src="img/chuteira1.jpg" class="img-fluid rounded" alt="Chuteira modelo 1">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="img/chuteira2.jpg" class="img-fluid rounded" alt="Chuteira modelo 2">
+                </div>
+                <div class="col-md-4 mb-3">
+                    <img src="img/chuteira3.jpg" class="img-fluid rounded" alt="Chuteira modelo 3">
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="container py-5 text-center">
+            <video class="w-100 rounded" controls>
+                <source src="videos/videoplayback.mp4" type="video/mp4">
+                <track src="videos/legenda.vtt" kind="subtitles" srclang="pt-BR" label="Português" default>
+                Seu navegador não suporta vídeo.
+            </video>
+
+            <p class="legenda mt-3">
+                Vídeo demonstrativo sobre desempenho, estilo e presença das chuteiras no futebol.
+            </p>
+        </section>
+
+        <section id="lista" class="container py-5">
+            <h2 class="text-center mb-4">Destaques das Chuteiras</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Maior conforto durante a partida</li>
+                <li class="list-group-item">Boa aderência ao gramado</li>
+                <li class="list-group-item">Modelos modernos e estilosos</li>
+                <li class="list-group-item">Opções para campo, society e futsal</li>
+                <li class="list-group-item">Mais precisão e estabilidade nos movimentos</li>
+            </ul>
+        </section>
+
+        <section id="tabela" class="container py-5">
+            <h2 class="text-center mb-4">Tabela de Produtos</h2>
+            <table class="table table-striped table-hover text-center">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Categoria</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nike Mercurial</td>
+                        <td>Campo</td>
+                        <td>R$ 899,90</td>
+                    </tr>
+                    <tr>
+                        <td>Puma Future</td>
+                        <td>Campo</td>
+                        <td>R$ 749,90</td>
+                    </tr>
+                    <tr>
+                        <td>Nike Phantom</td>
+                        <td>Campo</td>
+                        <td>R$ 599,90</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contato" class="container py-5">
+            <h2 class="text-center mb-4">Formulário de Contato</h2>
+            <form class="mx-auto" style="max-width: 500px;">
+                <div class="mb-3">
+                    <label class="form-label">Nome</label>
+                    <input type="text" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">E-mail</label>
+                    <input type="email" class="form-control" required>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Mensagem</label>
+                    <textarea class="form-control" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="m-0">&copy; 2026 Carsports - Todos os direitos reservados.</p>
+        <p class="m-0">Contato: carsports@email.com</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
